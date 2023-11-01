@@ -1,12 +1,15 @@
-<!--Sử dụng dấu * để vẽ tam giác trong PHP-->
-<?php
-$col=9;
-for($i=0;$i<10;$i++){
-   for($j=0;$j<10;$j++){
-      if($j<=$i){
-          echo "* ";
-      }
-   }
-   echo "<br>";
-}
-?>
+<!--Viết chương trình để in ra bảng cửu chương trong PHP.-->
+<table border="1px">
+    <tr>
+        <?php
+        for($i = 1; $i < 10; $i ++) {
+            echo "<td>";
+            for($j = 1; $j <= 10; $j ++) {
+                echo "$i x $j = " . ($i * $j);
+                echo "<br>";
+            }
+            echo "</td>";
+        }
+        ?>
+    </tr>
+</table>
